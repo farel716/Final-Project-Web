@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: transparent;
+    outline: none;
+    color: white;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: rgb(0, 0, 44);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.all {
+    width: 700px;
+    height: 400px;
+    border: 2px solid rgba(0, 159, 170, 0.219);
+    border-radius: 50px;
+    box-shadow: 0 0 100px rgba(0, 0, 255, 0.13);
+    background-color: rgba(0, 95, 102, 0.205); 
+    backdrop-filter: blur(0.1px);
+    padding: 30px;
+    display: flex;
+}
+
+.sign-up {
+    width: 350px;
+    height: 100%;
+    padding: 0 30px;
+}
+
+.sign-up .judul-signup h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 800;
+    color: rgba(0, 255, 255, 0.568);
+    text-shadow: 0 0 20px rgb(0, 97, 97);
+}
+
+.sign-up form input {
+    width: 100%;
+    margin: 10px 0 10px 0;
+    height: 35px;
+    padding: 7px 15px;
+    border-radius: 5px;
+    border: 1px solid rgb(0, 134, 134);
+    box-shadow: 0 0 15px rgb(0, 97, 97);
+}
+
+.sign-up form .btn-signup button {
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 10px;
+    height: 40px;
+    border: none;
+    background-color: rgb(0, 175, 175);
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.sign-up form .btn-signup button::before {
+    content: '';
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 87, 87);
+    z-index: -1;
+    border-radius: 10px;
+    transition: 0.6s;
+}
+
+.sign-up form .btn-signup button:hover::before {
+    width: 100%;
+}
+
+.kotak {
+    background-color: rgb(0, 0, 53);
+    width: 50%;
+    height: 100%;
+    border: 2px solid rgba(4, 238, 255, 0.219);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.kotak.geser-kiri {
+    transform: translateX(-350px);
+}
+
+.kotak .kotak-btn button {
+    width: 130px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: 0 0 20px rgba(0, 0, 255, 0.267);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+form a {
+    text-decoration: none;
+    display: flex;
+    
+    justify-content: center;
+    border: 1px solid rgb(0, 175, 175);
+    background-color: rgb(0, 175, 175);
+}
+
+
+
+
+
+
